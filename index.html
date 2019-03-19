@@ -17,9 +17,9 @@
       transform: translateY(-50%);
       text-align: center;
     }
+
     #dave {
       font-family: 'Lobster Two', cursive;
-      font-size: 18vw;
       background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -27,6 +27,16 @@
       -webkit-animation: Gradient 15s ease infinite;
       -moz-animation: Gradient 15s ease infinite;
       animation: Gradient 15s ease infinite;
+    }
+    @media only screen and (max-width: 600px){
+      #dave {
+        font-size: 30vw;
+      }
+    }
+    @media only screen and (min-width: 601px){
+      #dave {
+        font-size: 18vw;
+      }
     }
     body {
       width: 100wh;
