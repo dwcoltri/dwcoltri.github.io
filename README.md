@@ -1,2 +1,0 @@
-# davecoltri.com
-Personal Website

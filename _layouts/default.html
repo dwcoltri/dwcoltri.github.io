@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+      <!--
+                 \|||/
+                 (o o)
+      --------ooO-(_)-Ooo---------
+      -   no peaking!            -
+      -   it's not interesting   -
+      ----------------------------
+      -->
+      <title>{{page.title}}</title>
+      <style>
+        .main {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align: center;
+        }
+    
+        #dave {
+          font-family: 'Lobster Two', cursive;
+          background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-size: 400% 400%;
+          -webkit-animation: Gradient 15s ease infinite;
+          -moz-animation: Gradient 15s ease infinite;
+          animation: Gradient 15s ease infinite;
+        }
+        @media only screen and (max-width: 600px){
+          #dave {
+            font-size: 30vw;
+          }
+        }
+        @media only screen and (min-width: 601px){
+          #dave {
+            font-size: 18vw;
+          }
+        }
+        body {
+          height: 50vh;
+          color: #fff;
+        }
+        @-webkit-keyframes Gradient {
+          0% {background-position: 0% 50%}
+          50% {background-position: 100% 50%}
+          100% {background-position: 0% 50%}
+        }
+        @-moz-keyframes Gradient {
+          0% {background-position: 0% 50%}
+          50% {background-position: 100% 50%}
+          100% {background-position: 0% 50%}
+        }
+        @keyframes Gradient {
+          0% {background-position: 0% 50%}
+          50% {background-position: 100% 50%}
+          100% {background-position: 0% 50%}
+        }
+      </style>
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets//favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets//favicon-16x16.png">
+      <link rel="manifest" href="assets//manifest.json">
+      <meta name="theme-color" content="#ffffff">
+    </head>
+    
+    <body>
+      <div class="main">
+        <h1 id="dave">{{ page.header }}</h1>
+      </div>
+      <div>
+        {{ content }}
+      </div>
+      <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    </body>
+    
+    </html>
